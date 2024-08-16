@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gravadora Sonic Beats</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="WhatsApp_Image_2024-08-15_at_15.32.20-removebg-preview.png" alt="Logo da Gravadora Sonic Beats">
+
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#artistas">Artistas</a></li>
+                <li><a href="#produtores">Produtores</a></li>
+                <li><a href="#lançamentos">Lançamentos</a></li>
+                <li><a href="#staffs">Staffs</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="artistas" class="section">
+        <h2>Nossos Artistas</h2>
+        <div class="artistas-container">
+            <div class="artista">
+                <img src="WhatsApp Image 2024-08-15 at 22.52.45.jpeg" alt="Artista 1">
+                <h3>Pdromeck</h3>
+                <a href="https://www.instagram.com/pdromeck/" target="_blank">
+                    <h3>
+                        @pdromeck
+                    </h3>
+                </a>
+            </div>
+            <div class="artista">
+                <img src="bruno.jpeg" alt="Artista 2">
+                <h3>Bruno</h3>
+                <a href="https://www.instagram.com/bruno_.freitasx/" target="_blank">
+                    <h3>
+                        @bruno_.freitasx
+                    </h3>
+                </a>
+
+            </div>
+            <div class="artista">
+                <img src="tavin.jpeg" alt="Artista 2">
+                <h3>Tavyn</h3>
+                <a href="https://www.instagram.com/iae_tavyn/" target="_blank">
+                    <h3>
+                        @iae_tavyn
+                    </h3>
+                </a>
+
+            </div>
+            <!-- Mais artistas aqui -->
+        </div>
+    </section>
+
+    <section id="produtores" class="section">
+        <h2>Nossos Produtores</h2>
+        <div class="artistas-container">
+            <div class="artista">
+                <img src="alan.jpeg" alt="Artista 1">
+                <h3>Allado</h3>
+                <a href="https://www.instagram.com/prod.allado/" target="_blank">
+                    <h3>
+                        @prod.allado
+                    </h3>
+                </a>
+            </div>
+            <!-- Mais artistas aqui -->
+        </div>
+    </section>
+
+    <section id="lançamentos" class="section">
+        <h2>Lançamentos Recentes</h2>
+        <div class="lançamentos-container">
+            <a href="https://www.youtube.com/watch?v=B6ivGPFjBVE" target="_blank" class="lançamento" href="https://www.youtube.com/watch?v=B6ivGPFjBVE">
+                <img src="WhatsApp Image 2024-08-15 at 11.05.24 (1).jpeg" href="https://www.youtube.com/watch?v=B6ivGPFjBVE"  alt="Álbum 1">
+                <h3>Perseu - 21 Problemas (prod.allado)</h3>
+            </a>
+            <a href="https://www.youtube.com/watch?v=wgyt5_nbKig"  target="_blank" class="lançamento">
+                <img src="WhatsApp Image 2024-08-15 at 11.05.24 (1).jpeg" alt="Álbum 2">
+                <h3>Pdromeck - Corro do Flash (prod.allado)</h3>
+            </a>
+            <a href="https://www.youtube.com/watch?v=_s_c3VkJLSg" class="lançamento">
+                <img src="WhatsApp Image 2024-08-15 at 11.05.24 (1).jpeg" alt="Álbum 2">
+                <h3>Tavyn - Cubana (prod.allado)</h3>
+            </a>
+            <!-- Mais lançamentos aqui -->
+        </div>
+    </section>
+
+    <section id="staffs" class="section">
+        <h2>Staffs</h2>
+        <div class="artistas-container">
+            <div class="artista">
+                <img src="samuel.jpeg" alt="Artista 1">
+                <h3>Smk</h3>
+                <a href="https://www.instagram.com/s.eandrade/" target="_blank">
+                    <h3>
+                        @s.eandrade
+                    </h3>
+                </a>
+            </div>
+            <div class="artista">
+                <img src="artista2.jpg" alt="Artista 2">
+                <h3>Staffs</h3>
+            </div>
+            <!-- Mais artistas aqui -->
+        </div>
+    </section>
+
+    <section id="sobre" class="section">
+        <div class="nos">
+            <h2>Sobre Nós</h2>
+            <p>Iconic Mob é uma Mob com a composição de artistas mais versáteis e empenhados no desenvolvimento de arte, focada no Hip-hop e em suas vertentes,<br> Iconic veio com a missão de tornar referência, com a visão de passar a visão e os valores do gueto carregados no rap </p>
+            <img src="iconic.jpeg" alt="" class="iconic">
+        </div>
+    </section>
+
+    <section id="contato" class="section">
+        <h2>Contato</h2>
+        <form action="#">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Iconic Mob. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+
+        // Seleciona todos os links de navegação
+const navLinks = document.querySelectorAll('nav ul li a');
+
+// Adiciona um evento de clique para cada link
+navLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault(); // Previne o comportamento padrão do link
+
+        // Seleciona a seção alvo
+        const targetId = link.getAttribute('href');
+        const targetSection = document.querySelector(targetId);
+
+        // Faz a rolagem suave até a seção alvo
+        window.scrollTo({
+            top: targetSection.offsetTop,
+            behavior: 'smooth'
+        });
+    });
+});
+
+// Adiciona uma classe ativa ao link de navegação correspondente à seção visível
+window.addEventListener('scroll', () => {
+    let current = '';
+
+    document.querySelectorAll('.section').forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+
+        if (pageYOffset >= sectionTop - sectionHeight / 3) {
+            current = section.getAttribute('id');
+        }
+    });
+
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${current}`) {
+            link.classList.add('active');
+        }
+    });
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Função para observar a rolagem da página
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('aparecer');
+            }
+        });
+    }, {
+        threshold: 0.1 // Elemento aparece quando 10% está visível
+    });
+
+    // Seleciona todas as seções e divs a serem observadas
+    const sections = document.querySelectorAll('.section');
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+
+    const artistas = document.querySelectorAll('.artista');
+    artistas.forEach(artista => {
+        observer.observe(artista);
+    });
+
+    const lancamentos = document.querySelectorAll('.lançamento');
+    lancamentos.forEach(lancamento => {
+        observer.observe(lancamento);
+    });
+
+    // Efeito suave ao clicar nos links de navegação
+    document.querySelectorAll('nav ul li a').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+
+            window.scrollTo({
+                top: targetElement.offsetTop,
+                behavior: 'smooth'
+            });
+
+            setTimeout(() => {
+                targetElement.classList.add('aparecer');
+            }, 500); // Ajuste o tempo conforme necessário
+        });
+    });
+});
+
+    </script>
+</body>
+</html>
